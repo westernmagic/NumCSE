@@ -25,8 +25,9 @@ addons:
         sources: &global_apt_sources
             - george-edison55-precise-backports
         packages: &global_apt_packages
-            - cmake
-            - cmake-data
+            - cmake3
+              #- cmake
+              #- cmake-data
             - libdw-dev
 
 matrix:
