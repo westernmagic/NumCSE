@@ -9,4 +9,4 @@
 	url = https://github.com/svn2github/MathGL.git
 [submodule "external/backward-cpp"]
 	path = external/backward-cpp
-	url = https://github.com/bombela/backward-cpp.git
+	url = git@github.com:westernmagic/backward-cpp.git

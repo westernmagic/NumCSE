@@ -1,5 +1,4 @@
-
-### https://raw.github.com/github/gitignore/67f633a0df0feeb1ae6f9a521d43ff7070191098/CMake.gitignore
+### https://raw.github.com/github/gitignore/7792e50daeaa6c07460484704671d1dc9f0045a7/CMake.gitignore
 
 CMakeCache.txt
 CMakeFiles
@@ -12,7 +11,7 @@ compile_commands.json
 CTestTestfile.cmake
 
 
-### https://raw.github.com/github/gitignore/67f633a0df0feeb1ae6f9a521d43ff7070191098/C++.gitignore
+### https://raw.github.com/github/gitignore/7792e50daeaa6c07460484704671d1dc9f0045a7/C++.gitignore
 
 # Prerequisites
 *.d
@@ -215,6 +214,8 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 
+
+### Extras
 build/
 *.autosave.xoj
 *.bak

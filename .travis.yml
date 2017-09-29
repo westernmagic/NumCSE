@@ -23,11 +23,9 @@ script:
 addons:
     apt:
         sources: &global_apt_sources
-            - george-edison55-precise-backports
+            - ubuntu-toolchain-r-test
         packages: &global_apt_packages
             - cmake3
-              #- cmake
-              #- cmake-data
             - libdw-dev
 
 matrix:
@@ -39,21 +37,19 @@ matrix:
               apt:
                   sources:
                       - *global_apt_sources
-                      - ubuntu-toolchain-r-test
                   packages:
                       - *global_apt_packages
                       - g++-7
         - os: linux
           compiler: clang
-          env: MATRIX_EVAL="CC=clang-5 && CXX=clang++-5"
+          env: MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
           addons:
               apt:
                   sources:
                       - *global_apt_sources
-                      - ubuntu-toolchain-r-test
-                      - llvm-toolchain-precise-5
+                      - llvm-toolchain-trusty-5.0
                   packages:
                       - *global_apt_packages
-                      - clang-5
+                      - clang-5.0
         - os: osx
           osx_image: xcode9
